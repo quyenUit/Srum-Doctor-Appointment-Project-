@@ -1,9 +1,9 @@
 import React from 'react'
-import DoctorCard from '../components/DoctorCard'
+import DoctorList from '../components/DoctorList'
 const HomePage = () => {
   return (
     <div>
-      <DoctorCard/>
+      <DoctorList/>
     </div>
   )
 }
