@@ -27,6 +27,7 @@
 // export default DoctorCard
 
 import React from "react";
+import Button from "./Button";
 const DoctorCard = ({ imgURL, name, faculty, info, hospital }) => {
   return (
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
@@ -43,6 +44,7 @@ const DoctorCard = ({ imgURL, name, faculty, info, hospital }) => {
           {faculty}
         </span>
       </div>
+      <div  className='text-center m-4'><Button title="Select" /></div>
     </div>
   );
 };
