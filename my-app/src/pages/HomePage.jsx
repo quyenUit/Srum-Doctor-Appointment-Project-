@@ -1,15 +1,11 @@
 import React from 'react'
-import DoctorList from '../components/DoctorList'
 
-import SystemInput from '../components/SystemInput'
-import Stage from '../components/Stage'
+import SymptomsInput from '../components/SymptomsInput'
 
 const HomePage = () => {
   return (
     <div>
-        <Stage/>
-        <SystemInput/>
-      <DoctorList/>
+        <SymptomsInput currentPage="SymptomsInput" />
     </div>
   )
 }
