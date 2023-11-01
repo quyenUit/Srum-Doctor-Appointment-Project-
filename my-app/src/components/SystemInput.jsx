@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Button from './Button'
 const SystemInput = () => {
     return (
         <form className="w-full max-w-lg">
@@ -59,7 +59,11 @@ const SystemInput = () => {
               </div>
             
           </div>
+
+          <div className='text-center my-6'><Button className="" title= 'Next'/></div>
         </form>
+
+        
       );
 }
 
