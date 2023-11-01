@@ -1,18 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Stage = (props) => {
+const Stage = () => {
+  const stages = ["Input symptoms", "Set appointment", "Input infomation"];
   return (
-    <div style={{
-        textAlign: "center",
-        backgroundColor: "white",
-        height: "30px",
-        width: "150px",
-        borderRadius: "10px",
-        border: "1px solid black",
-        marginRight: "20px"
-    }}>
-        {props.stageName}</div>
-  )
-}
+    <div className="flex gap-4 text-sm">
+      {stages.map((stage) => (
+        <div className="my-4 uppercase border-2 border-blue-200 bg-blue-700 text-white p-2 px-4 rounded-2xl font-medium">{stage}</div>
+      ))}
+    </div>
+  );
+};
 
-export default Stage
+export default Stage;
